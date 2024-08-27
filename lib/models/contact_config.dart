@@ -14,3 +14,5 @@ class ContactConfig extends RemoteConfig {
     emailOptions = ContactEmailOptions.fromModel(Model.fromJson(jsonDecode(appConfig.getString(_emailConfigKey)) as Map<String, dynamic>));
   }
 }
+
+final ContactConfig contactConfig = ContactConfig();

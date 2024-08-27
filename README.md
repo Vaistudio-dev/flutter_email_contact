@@ -15,6 +15,11 @@ This is possible with the Trigger Email Firebase extension.
 "message": "Message",
 "send": "Send",
 "messageReceived": "We got your message, thank you for your feedback !",
+"reportBug": "Report a bug",
+"improvement": "Improvement",
+"newFeature": "New feature",
+"rateApp": "Rate app",
+"helpWanted": "Help wanted",
 ### French
 "contactUs": "Contactez nous",
 "subject": "Sujet",
@@ -22,6 +27,11 @@ This is possible with the Trigger Email Firebase extension.
 "message": "Message",
 "send": "Envoyer",
 "messageReceived": "Nous avons reçu votre message, merci de vos commentaires !",
+"reportBug": "Signaler un bug",
+"improvement": "Amélioration",
+"newFeature": "Nouvelle fonctionnalité",
+"rateApp": "Noter l'application",
+"helpWanted": "Besoin d'aide",
 
 ## Additional information
 
