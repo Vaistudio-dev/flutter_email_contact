@@ -59,17 +59,17 @@ class _ContactFormState extends State<ContactForm> {
             );
           }).toList(),
         ),
+        const SizedBox(height: 25),
         FitTextInput.multiline(
           label: getString("message"),
           markAsRequired: true,
           maxLength: 2000,
           hint: getString("contactMessage"),
-          margin: const EdgeInsets.only(left: 12, right: 12),
           onChange: (input) => setState(() {
             message = input;
           }),
         ),
-        const SizedBox(height: 25),
+        const SizedBox(height: 50),
         FitButton(
           onTap: () {
             final StringBuffer completeMessage = StringBuffer();
