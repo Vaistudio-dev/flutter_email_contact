@@ -35,4 +35,31 @@ This is possible with the Trigger Email Firebase extension.
 
 ## Additional information
 
-To use this package, you must use Firebase Firestore and Remote Config.
+### Trigger Email Extension
+Don't forget to set the rules for the collection:
+```
+match /mail/{document=**} {
+    allow write: if request.auth != null;
+    allow write: if request.auth == null;
+}
+```
+
+### Remote Config
+Set the contact_option parameter like so:
+```json
+{
+  "id": "opt",
+  "data": {
+    "email": "vaistudio.dev@gmail.com",
+    "subjects": [
+      "reportBug",
+      "improvement",
+      "newFeature",
+      "rateApp",
+      "helpWanted"
+    ],
+    "product": "Projct",
+    "firestore_collection": "mail"
+  }
+}
+```
