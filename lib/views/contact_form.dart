@@ -33,14 +33,12 @@ class _ContactFormState extends State<ContactForm> {
   @override
   Widget build(BuildContext context) {
     return FitPage(
-      children: [
-        FitTextIcon(
-          icon: const Icon(Icons.comment),
-          text: FitText.headline(getString("contactUs")),
-          themeData: const FitTextIconThemeData(
-            contentOrder: TextIconOrder.ti
-          ),
+      appBar: AppBar(
+        title: FitText(
+          getString("contactUs")
         ),
+      ),
+      children: [
         DropdownButtonFormField<String>(
           value: subject,
           isExpanded: true,
