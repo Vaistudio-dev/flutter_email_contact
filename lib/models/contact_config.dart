@@ -5,7 +5,7 @@ import 'package:flutter_fit_utils/model/model.dart';
 import 'package:flutter_fit_utils_config/remote_config.dart';
 
 class ContactConfig extends RemoteConfig {
-  static const String _emailConfigKey = "email_contact";
+  static const String _emailConfigKey = "contact_options";
 
   late ContactEmailOptions emailOptions;
 
