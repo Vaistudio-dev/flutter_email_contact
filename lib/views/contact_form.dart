@@ -53,7 +53,7 @@ class _ContactFormState extends State<ContactForm> {
           items: widget.options.availableSubjects.map<DropdownMenuItem<String>>((String value) {
             return DropdownMenuItem<String>(
               value: value,
-              child: Text(value),
+              child: Text(getString(value)),
             );
           }).toList(),
         ),
