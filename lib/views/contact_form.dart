@@ -37,6 +37,9 @@ class _ContactFormState extends State<ContactForm> {
         FitTextIcon(
           icon: const Icon(Icons.comment),
           text: FitText.headline(getString("contactUs")),
+          themeData: const FitTextIconThemeData(
+            contentOrder: TextIconOrder.ti
+          ),
         ),
         DropdownButtonFormField<String>(
           value: subject,
@@ -86,6 +89,7 @@ class _ContactFormState extends State<ContactForm> {
               widget.onSend!();
             }
           },
+          width: MediaQuery.of(context).size.width,
           child: FitText.button(getString("send")),
         ),
       ],
