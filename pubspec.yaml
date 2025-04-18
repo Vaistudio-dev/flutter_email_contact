@@ -1,6 +1,6 @@
 name: flutter_email_contact
 description: "A flutter package to let your users send you feedback emails."
-version: 1.0.0
+version: 1.0.1
 publish_to: none
 
 environment:
